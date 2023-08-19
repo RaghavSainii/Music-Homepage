@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+:root {
+  --purple500: #281154;
+  --purple300: #270082;
+  --purple600: #1b0058;
+  --red600: #dc0000;
+  --body: #f9f6ff;
+  --max-width: 1200px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body{
+    line-height: 1.4;
+    font-weight: 300;
+    font-family: "Roboto", sans-serif;
+    
+}
+header{
+    background-color: var(--purple300);
+    position: sticky;
+    top:0;
+    z-index: 100;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  align-items: center;
+  color: #f9f6ff;
+  
+}
+.container{
+ max-width: 1200px;
+ margin: 0 auto;
+
+}
+ul{
+    list-style: none;
+    font-size: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+.logo{
+    color: white;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+button{
+padding: 10px 15px;
+border: none;
+transition: 0.3s ease-in-out;
+}
+button:hover{
+    transition: 0.3s ease-in-out;
+    opacity: 0.8;
+}
+nav ul{
+    display: flex;
+    gap: 20px;
+}
+nav ul li{
+    border-bottom: transparent;
+    transition: 0.2s ease-in;
+}
+nav ul li:hover{
+    border-bottom: 2px solid white;
+    transition: 0.2s ease-in;
+}
+
+.herosection{
+    background-image: url(Photos/hero_image.png);
+    background-repeat: none;
+    background-size: cover;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    text-align: center;
+   color: white;
+
+}
+.herosection .container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.herosection h1{
+font-size: 50px;
+}
+.herosection h3{
+    font-size: 32px;
+}
+.musicsection {
+    display:grid;
+    place-items: center;
+    text-align: center;
+    background-color: var(--purple500);
+    color: white;
+    padding: 30px;
+}
+
+.musicsection .container{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.musicsection .trailbtn{
+    border: none;
+    color: white;
+    padding: 20px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    background-color: var(--red600);
+    font-size: 20px;
+    border-radius: 0;
+font-weight: lighter;
+   letter-spacing: 1px;
+   transition: 0.3s ease-in-out;
+   cursor: pointer;  
+}
+
+ .trailbtn:hover{
+    background-color: red;
+    transition: 0.4s ease-in;
+    animation: pulseAnimation 2s infinite
+   
+}
+.ipad-iphoneimg{
+    margin-top: -400px;
+    position: relative;
+    top: 400px;
+}
+
+.about-music{
+    padding-top: 500px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    gap:30px;
+}
+
+.readmorebtn{
+    /* border: none;
+    background-color:#270082;
+    color: white;
+    font-size: 17px; 
+    letter-spacing: 1px;
+    padding: 10px;
+    width: 120px;
+    font-weight: 100;
+    text-align: center; */
+    background-color: var(--purple300);
+    color: white;
+}
+
+.video-section{
+    background-image: url(Photos/video.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    min-height: 800px;
+    color: white;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+.video-section .container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: -200px;
+}
+.giftcard{
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+}
+
+@keyframes pulseAnimation{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.05);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
