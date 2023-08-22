@@ -17,13 +17,17 @@ body{
     line-height: 1.4;
     font-weight: 300;
     font-family: "Roboto", sans-serif;
-    
+    scroll-behavior: smooth;
+
 }
 header{
     background-color: var(--purple300);
     position: sticky;
     top:0;
     z-index: 100;
+}
+section{
+    scroll-margin: 50px;
 }
 nav{
   display: flex;
@@ -57,6 +61,8 @@ button{
 padding: 10px 15px;
 border: none;
 transition: 0.3s ease-in-out;
+background-color: var(--purple300);
+color: white;
 }
 button:hover{
     transition: 0.3s ease-in-out;
@@ -183,6 +189,42 @@ font-weight: lighter;
     display: flex;
     justify-content: center;
     margin: 100px 0;
+    gap: 50px;
+    
+}
+.contentcontainer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+.contentcontainer .redeem{
+    align-self: start;
+}
+.footer-upper{
+
+    background-color: var(--purple500);
+    padding: 20px;
+}
+.footer-upper .container{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 30px;
+}
+.footer-upper h4{
+    font-size: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid white;
+    margin-bottom: 10px;
+}
+.lower-section{
+    background-color:var(--purple300);
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
 }
 
 @keyframes pulseAnimation{
@@ -194,5 +236,14 @@ font-weight: lighter;
     }
     100%{
         transform: scale(1);
+    }
+}
+@media (max-width: 768px) {
+    .container {
+      max-width: 100%;
+      padding: 0 20px;
+    }
+    img{
+        max-width: 100%;
     }
 }
